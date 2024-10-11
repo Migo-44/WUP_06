@@ -30,10 +30,14 @@ mydata <- na.omit(mydata)
 Is attitude toward capitol punishment (cappun) independent of race (race)?
 If not, then whose view differs from whom??
 
+# Methods
+Cappun - categorical        
+Race - categorical          
+They are both categorical so I will be using cat~cat helper file.           
+
 $H_0$ Attitude towards capital punishment is not independent of race.        
 $H_A$ Attitude towards capital punishment is independent of race. 
 
-# Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
@@ -88,7 +92,7 @@ fisher.test(table1)
 ```
 
 
-The p-value is 2.2e-16 which is less than 0.05 therefore we reject the null hypothesis.    
+The p-value is 0.00000000000000022 which is less than 0.05 therefore we reject the null hypothesis. With this, we can know that people in the white race category are more likely to favor capital punishment.    
 
 
 ## More data version
@@ -98,4 +102,4 @@ The p-value is 2.2e-16 which is less than 0.05 therefore we reject the null hypo
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-With the data collected, we can assume that people who fall in the white race category are more likely to favor capital punishment. The p-value in the Fisher's exact test was 2.2-e-16 which is less than 0.05 therefore we reject the null hypothesis. In the table with percentages of displaying favor and oppose, people in the white race category had 65.1% of people favor capital punishment. With this information, we can conclude that attitude towards capital punishment is not independent of race. 
+With the data collected, we can assume that people who fall in the white race category are more likely to favor capital punishment. The p-value in the Fisher's exact test was 0.00000000000000022 which is less than 0.05 therefore we reject the null hypothesis. In the table with percentages of displaying favor and oppose, people in the white race category had 65.1% of people favor capital punishment. With this information, we can conclude that attitude towards capital punishment is not independent of race. 
